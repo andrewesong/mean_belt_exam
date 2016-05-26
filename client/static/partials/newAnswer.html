@@ -1,0 +1,15 @@
+<div ng-controller="newAnswersController as NAC">
+	<div class="container">
+		<a href="#/dashboard">Home</a>
+		<a href="#/question/{{NAC.questionInfo._id}}">Go Back to Question</a>
+		<a href="" ng-click="NAC.logout()">Logout</a>
+		<h2>Question: {{NAC.questionInfo.question}}</h2>
+		<h4>Description: {{NAC.questionInfo.description}}</h4>
+		<form>
+			Your Answer: <textarea ng-model="NAC.newAnswer.answer"></textarea>
+			Supporting Details for your answer: <textarea ng-model="NAC.newAnswer.description"></textarea>
+			<button ng-click="NAC.cancelAnswer()">Cancel</button>
+			<button ng-click="NAC.addAnswer()">Submit</button>
+		</form>
+	</div>
+</div>

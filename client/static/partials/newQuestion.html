@@ -1,0 +1,11 @@
+<div ng-controller="newQuestionsController as NQC">
+	<div class="container">
+		<h3>New Question</h3>
+		<form>
+			Question: <textarea ng-model="NQC.newQuestion.question"></textarea>
+			Description: <textarea ng-model="NQC.newQuestion.description"></textarea>
+			<button ng-click="NQC.cancelQuestion()">Cancel</button>
+			<button ng-click="NQC.addQuestion()">Submit</button>
+		</form>
+	</div>
+</div>
