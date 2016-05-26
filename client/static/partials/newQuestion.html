@@ -1,5 +1,7 @@
 <div ng-controller="newQuestionsController as NQC">
 	<div class="container">
+		<a href="#/dashboard">Home</a>
+		<a href="" ng-click="NQC.logout()">Logout</a>
 		<h3>New Question</h3>
 		<form>
 			Question: <textarea ng-model="NQC.newQuestion.question"></textarea>
